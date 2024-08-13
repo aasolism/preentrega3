@@ -265,5 +265,22 @@ h1::after {
   background-color: #fc036b;
   transform: translateX(-50%);
 }
+.btn {
+  background-color: #fc036b; 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border-radius: 30px;
+  border: none; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn:hover {
+  background-color: #ffffff; 
+  color: #fc036b; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+} 
 
 /*# sourceMappingURL=style.css.map */
