@@ -62,6 +62,17 @@ ul {
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 // Navbar
 .navbar {
   background-color: $background-color;
@@ -113,12 +124,11 @@ ul {
       margin-bottom: 30px;
       color: #ffffff;
       opacity: 0;
-      transform: scale(0.5);
-      animation: zoomIn 1s ease-in-out forwards;
+      animation: fadeIn 1.5s ease-in-out forwards;
     }
 
     h2 {
-      animation: slideIn 1s ease-in-out forwards;
+      animation: slideIn 1.5s ease-in-out forwards;
       animation-delay: 0.5s;
     }
   }
@@ -310,3 +320,4 @@ footer.footer {
   text-align: center;
   margin-top: auto;
 }
+
